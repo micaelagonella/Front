@@ -1,18 +1,24 @@
-body{
-    font-size: 20px;
-}
 /*header*/
 header{
     background-color: #E6E6E6;
+    text-align: center;  /* Le v{a a pegar a la imagen de batman tmb*/
 }
-h1{
-    color: #005677;
-    text-align: center;
-    background-color: #C4C4C4;
+h1, h2{
+        color: #005677;
+        background-color: #C4C4C4;
+        padding: 5px, 20px; /*le da ancho al borde de la caja. Si pongo dos valores 1)arriba y abajo 2(der e izq)*/
 }
-h2{
-    color: #005677;
-    background-color: #C4C4C4;
+
+/*Main*/ 
+.container{
+    margin: 40px, auto;
+    max-width: 70%;
+}
+span{
+    font-weight: bold;
+}
+.datos_personales span{
+    font-style: italic;
 }
 
 /*footer*/
@@ -21,6 +27,9 @@ footer{
     background-color: #005677;
     text-align: center;
 }
+footer h3{
+    display: inline-block; /* le bloque el bloque al titulo iconos al lado*/
+}
 .iconos{
-    margin-right: 15px;
+    margin-left: 30px;
 }
