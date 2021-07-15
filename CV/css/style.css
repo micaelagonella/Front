@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Header */
+h1{
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    color: white;
+    background-color: cadetblue;
+    text-align: center;
+    background-image: url("../img/wave-3473335_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner ul{
+        font-size: 20px;
+}
+
+.banner ul img{
+    margin-right:px;
+}
+
+/*Main*/
+
+h2{
+    font-family: 'Roboto';
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    background-color: cadetblue;
+}
+.icono {
+    margin-right: 15px;
+}
+.redes{
+    
+}

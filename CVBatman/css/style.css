@@ -1,0 +1,26 @@
+body{
+    font-size: 20px;
+}
+/*header*/
+header{
+    background-color: #E6E6E6;
+}
+h1{
+    color: #005677;
+    text-align: center;
+    background-color: #C4C4C4;
+}
+h2{
+    color: #005677;
+    background-color: #C4C4C4;
+}
+
+/*footer*/
+footer{
+    color: white;
+    background-color: #005677;
+    text-align: center;
+}
+.iconos{
+    margin-right: 15px;
+}
