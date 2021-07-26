@@ -15,8 +15,8 @@ Proyectos y última fecha de actualización
 -[CV](https://micaelagonella.github.io/FrontEnd1/CV/), actualizado clase 6
 
 
--[Cards Super]((https://micaelagonella.github.io/FrontEnd1/Heroes/)
+-[Cards Super](https://micaelagonella.github.io/FrontEnd1/Heroes/)
 
 
--[Pizzeria]((https://micaelagonella.github.io/FrontEnd1/Pizza/)
+-[Pizzeria](https://micaelagonella.github.io/FrontEnd1/Pizza/)
 
