@@ -1,0 +1,51 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+ul li{
+    list-style-type: none;
+}
+/************Header************/
+a{
+    text-decoration: none;
+    color: black;
+}
+/************Main************/
+.banner{
+    background-color: white;
+    background-image: url("../img/lemon-pie\ 1.svg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+.banner p{
+    color: white;
+    font-size: 16px;
+    text-align: bottom;
+}
+.icono{
+    margin-right: 10px;
+}
+h1{
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+h3{
+    font-style: italic;
+}
+/************footer***********/
+footer{
+    background-color: #ccc;
+    text-align: center;
+}
+.icono-footer{
+    margin-left: 10px;
+}

@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+body{
+    margin: 0%;
+}
 
 /* Header */
+
+img{
+    border-radius: 50%;
+    width: 188px;
+    margin-left: 85%;
+    position: absolute;
+    margin-top: -3%;
+}
 h1{
     font-family: 'Bebas Neue';
     font-size: 80px;
@@ -13,29 +24,48 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    margin: 4% 0%;
+}
+.banner nav ul li a{
+    text-decoration: none;
+    color: black;
 }
 .banner ul{
-        font-size: 20px;
+    font-size: 20px;
 }
-
-.banner ul img{
-    margin-right:px;
-}
-
 /*Main*/
-
+main{
+    padding: 40px;
+}
 h2{
     font-family: 'Roboto';
 }
 
 /*footer*/
 footer{
-    text-align: center;
-    background-color: cadetblue;
-}
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        color: white;
+        background-color: cadetblue;
+        text-align: center;
+        background-image: url("../img/wave-3473335_1920.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: auto;
+    }
+    
 .icono {
     margin-right: 15px;
 }
-.redes{
-    
+footer p{
+    display: inline-block;
+    font-size: 20px;
+}
+footer h4{
+    font-size: 30px;
+    margin: 0%;
 }
