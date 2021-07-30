@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 /********** Body *******/
 
@@ -8,8 +9,8 @@
     font-family: 'Roboto', sans-serif;
 }
 .heroes{
-    padding: 0 0 0 15px;
-    font-size: 30px;
+    padding: 0 0 0 1rem;
+    font-size: 2rem;
     font-weight: bold;
     position: sticky;
     top: 0;
@@ -22,58 +23,75 @@
 
 header p{
     background-color: #1CD1B0;
-    padding: 0 0 0 15px;
-    font-size: 15px;
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
 }
 
 /******main******/
 
 .container{
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card{
-    width: 300px;
-    height: 500px;
-    margin-bottom: 10px;
+    width: 18.7rem;
+    height: 35rem;
+    margin-top: 2rem;
     background-color: #F3F3F3;
     box-shadow: 1px 5px 5px grey;
 }
 
 .card-img{
     background-image: url('../img/fondobatman.svg');
-    height: 190px;
+    height: 11.8rem;
+    background-size: cover;
     position: relative;
 }
 .card-img-harley{
     background-image: url('../img/fondoharley.svg');
-    height: 190px;
+    height: 11.8rem;
+    background-size: cover;
     position: relative;
 }
-.card-img #fotito, .card-img-harley #fotito{
+.card-img-ww{
+    background-image: url('../img/wwfondo.svg');
+    height: 11.8rem;
+    background-size: cover;
+    position: relative;
+}
+.card-img-superman{
+    background-image: url('../img/supermanfondo.svg');
+    height: 11.8rem;
+    background-size: cover;
+    position: relative;
+}
+.card-img #fotito, .card-img-harley #fotito, .card-img-ww #fotito, .card-img-superman #fotito {
     position: absolute;
     border-radius: 50%;
     bottom: -60px;
+    height: 50%;
     left: calc(50% - 60px);
 }
-.card-img #corazon, .card-img-harley #corazon{
-    padding: 25px;
+
+.card-img #corazon, .card-img-harley #corazon, .card-img-ww #corazon, .card-img-superman #corazon{
+    padding: 1.4rem;
 }
 
 .card-text{
-    padding: 60px 0 0 0;
+    padding: 4rem 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .card-text p{
-    padding: 20px;
+    padding: 1rem;
 }
 .card-button a{
-    padding: 15px;
+    padding: 1rem;
     color: white;
     display: inline-block;
     text-decoration: none;
@@ -83,5 +101,33 @@ header p{
 footer{
     background-color: #00669F;
     color: white;
-    padding: 10px;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.git{
+    text-decoration: none;
+    color: white;
+}
+
+/********** Responsive ************/
+@media screen and (max-width: 768px){
+    header p{
+        background-color:#D1891C;
+    }
+    .heroes{
+        color: white;
+    }
+    footer p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        margin-top: 1rem;
+        margin-bottom: 1rem;.
+        justify-content: space-evenly;
+}
 }
