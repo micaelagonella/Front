@@ -43,6 +43,7 @@ header p{
     margin-top: 2rem;
     background-color: #F3F3F3;
     box-shadow: 1px 5px 5px grey;
+    border-radius: 1rem 1rem 0rem 0rem;
 }
 
 .card-img{
@@ -62,12 +63,14 @@ header p{
     height: 11.8rem;
     background-size: cover;
     position: relative;
+    border-radius: 1rem 1rem 0rem 0rem;
 }
 .card-img-superman{
     background-image: url('../img/supermanfondo.svg');
     height: 11.8rem;
     background-size: cover;
     position: relative;
+    border-radius: 1rem 1rem 0rem 0rem;
 }
 .card-img #fotito, .card-img-harley #fotito, .card-img-ww #fotito, .card-img-superman #fotito {
     position: absolute;
