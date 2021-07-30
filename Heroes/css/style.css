@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/********** Body *******/
 
 *{  margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
-/******* Header *******/
-header{
+.heroes{
+    padding: 0 0 0 15px;
+    font-size: 30px;
+    font-weight: bold;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -18,63 +18,70 @@ header{
     background-color: #00669F;
 }
 
-.descuento{
+/******* Header *******/
+
+header p{
     background-color: #1CD1B0;
     padding: 0 0 0 15px;
     font-size: 15px;
 }
 
-.heroes{
-    padding: 0 0 0 15px;
-    font-size: 30px;
-    font-weight: bold;
-}
+/******main******/
 
-/*main*/
 .container{
-    display: flex;      /******** UBICAR TODO CON FLEX******/
-    justify-content: space-around;
-    margin: 50px 50px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .card{
+    width: 300px;
+    height: 500px;
+    margin-bottom: 10px;
     background-color: #F3F3F3;
-    height: 200px;
-    width: 312px;  
-    margin-left: 30px;
-    border-top: 100px;
+    box-shadow: 1px 5px 5px grey;
+}
+
+.card-img{
+    background-image: url('../img/fondobatman.svg');
+    height: 190px;
     position: relative;
 }
-.card-img-batman{
-    background-image: url("../img/849bfede3a5193c34ab8a00379e64fa2\ 1.svg");
-    background-color: #F3F3F3;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100%;
+.card-img-harley{
+    background-image: url('../img/fondoharley.svg');
+    height: 190px;
+    position: relative;
 }
-.card-img #fotito{
+.card-img #fotito, .card-img-harley #fotito{
     position: absolute;
     border-radius: 50%;
-    z-index: 999;
-    bottom: -31%;
-    right: 29%;
+    bottom: -60px;
+    left: calc(50% - 60px);
 }
+.card-img #corazon, .card-img-harley #corazon{
+    padding: 25px;
+}
+
 .card-text{
-    background-color: #F3F3F3;
-    padding: 50px;
-    text-align: justify;
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.card-text h2{
+.card-text p{
     padding: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
 }
 .card-button a{
-    background-color: #00669F;
-    text-align: center;
     padding: 15px;
-    text-decoration: none;
     color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #00669F;
+}
+
+footer{
+    background-color: #00669F;
+    color: white;
+    padding: 10px;
 }

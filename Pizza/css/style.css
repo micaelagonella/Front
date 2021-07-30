@@ -77,3 +77,13 @@ footer{
     align-items: center;
 }
 
+/********* responsive ********/
+@media screen and (max-width: 768px){
+    header nav{
+        display: none;
+    }
+    header .hamburguesa{
+        display: block;
+    }
+}
+/* PARA TABLET */
