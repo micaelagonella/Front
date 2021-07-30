@@ -127,7 +127,6 @@ footer{
 @media screen and (max-width: 480px){
     .container{
         margin-top: 1rem;
-        margin-bottom: 1rem;.
-        justify-content: space-evenly;
+        margin-bottom: 1rem;
 }
 }
