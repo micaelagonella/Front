@@ -15,7 +15,7 @@ Proyectos
 -[CV](https://micaelagonella.github.io/FrontEnd1/CV/)
 
 
--[Cards Super](https://micaelagonella.github.io/FrontEnd1/Heroes/) 
+-[Cards Super](https://micaelagonella.github.io/FrontEnd1/Heroes/)
 
 
 -[Pizzeria](https://micaelagonella.github.io/FrontEnd1/Pizza/) 
