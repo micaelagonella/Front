@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/********** Body *******/
+
+*{  margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.descuento{
+    background-color: #1CD1B0;
+    padding: 0 0 0 1rem;
+    font-size: 1rem;
+}
+header{
+    font-size: 2rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    background-color: #00669F;
+}
+
+/******* Header *******/
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+header ul li{
+    display: inline-block;
+}
+.menu-nav{
+    background-color:#001D2D;
+    text-align: right;
+
+}
+
+/************ Main ************/
+.login{
+    padding: 4rem;
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    align-content: center;
+}
+form input, .entrar-pag, .registrarse{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.login h3{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 0 2rem 0;
+}
+
+.registrarse {
+    color:#00669F;
+    text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.entrar-pag{
+    background-color: #1CD1B0;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*********** Footer **********/
+footer{
+    background-color: #00669F;
+    color: white;
+    padding: 0.7rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.git{
+    text-decoration: none;
+    color: white;
+}
+
+/********** Responsive ************/
+@media screen and (max-width: 768px){
+
+    .descuento{
+        background-color:#D1891C;
+    }
+    .heroes{
+        color: white;
+    }
+    footer p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}
