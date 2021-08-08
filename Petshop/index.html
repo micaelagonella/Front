@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>FrontCatDog</title>
 </head>
+
 <body>
     <header>
-        <div class='arriba'>
+        <div class='ofertas'>
             <p>Grandes ofertas en comederos</p>
             <ul>
                 <li>Español</li>
@@ -18,19 +19,21 @@
             </ul>
         </div>
 
-        <div >
+        <div class="menu-nav-logo">
+            <div class= "logo">
                 <img src="img/Cat.svg"alt="Logo1">
-                <h1><span>Front</span>Cat&Dog</h1>
+                <h1>Front<span>Cat&Dog</span></h1>
                 <img src="img/Dog.svg"alt="Logo2">
-            <nav>
+            </div>
+            <nav class="menu-nav">
                 <ul>
-                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-paw patita"></i>
                     <li><a href="#Categorias">Categorias</a></li>
-                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-paw patita"></i>
                     <li><a href="#Pets">Pets</a></li>
-                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-paw patita"></i>
                     <li><a href="#Nosotros">Nosotros</a></li>
-                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-paw patita"></i>
                     <li><a href="#Contacto">Contáctanos</a></li>
                 </ul>
             </nav>
@@ -40,39 +43,105 @@
 
     <main>
         <section class='banner'>
-
-            <p>¡Es un placer tenerte aquí! </p>
-            <p>¡Comederos en descuento!</p>
-            <p>COMEDEROS</p>
+            <div class= "banner-texto">
+                    <p class="placer">¡Es un placer tenerte aquí! </p>
+                    <p>¡Comederos en descuento!</p>
+                    <p class="comederos">COMEDEROS</p>
+            </div>
         </section>
+
         <section>
-            <img src="img/pawprint 1.svg" alt="patita">
-            <h2>Productos Destacados</h2>
-            <ul>
-                <li>Comederos</li>
-                <li>Accesorios</li>
-                <li>Comida</li>
-            </ul>
-            <div><img src="img/churrasquito.svg" alt="churrasquito">
+            <div class="productos-destacados">
+                <img src="img/pawprint 1.svg" alt="patita">
+                <h2>Productos Destacados</h2>
+                <ul>
+                    <li>Comederos   -</li>
+                    <li>Accesorios   -</li>
+                    <li>Comida</li>
+                </ul>
+            </div>
+
+        <section class="productos">
+            <div>
+                <img src="img/churrasquito.svg" alt="churrasquito">
                 <p>Juguete churrasquito</p>
-                <p>$150</p>
+                <p id= 'precio'>$150</p>
             </div>
             <div>
                 <img src="img/comedero.svg" alt="comedero">
                 <p>Comedero para perro</p>
-                <p>$250</p>
+                <p id= 'precio'>$250</p>
             </div>
             <div>
                 <img src="img/Huesito.svg" alt="huesito">
                 <p>Juguete Huesito</p>
-                <p>$650</p>
+                <p id= 'precio'>$650</p>
             </div>
         </section>
-        <section id="Contacto">Contáctanos
-        </section>
+
+
+            <form action="datosform.html" method="POST">
+                    <h3>Contáctanos</h3>
+                            <input type="text" name="nombre" placeholder="Nombre y Apellido">
+                            <input type="email" name="email" placeholder="Ingresá tu correo electrónico">
+                            <input type="tel" name="telefono" placeholder="Teléfono">
+                            <div>
+                                <button type="reset" value="reseteal">Resetear</button>
+                                <button type="submit" value="Enviar">Enviar</button>
+                            </div>
+            </form>
+
     </main>
+
     <footer>
-        <p align="center">Todos los derechos reservados Front End</p>
+
+        <div class= "novedades">
+            <p><i class="far fa-envelope"></i>Suscríbete para más novedades</p>
+            <form action="" class="suscribirme">
+                <input type="email" name="email" placeholder="Ingresá tu correo electrónico">
+                <button type="submit" value="Suscribirme">Suscribirme</button>
+            </form>
+        </div>
+
+        <div class=footer-text>
+        
+            <div class="text-container">
+                <div class="localidad">
+                    <img src="./img/localidad.svg" alt="">
+                    <div class="localidad-texto">
+                        <h4>Localidad</h4>
+                        <p>Calle - provincia</p>
+                    </div>
+                </div>
+        
+                <div class="telef"> 
+                    <img src="./img/telef.svg" alt="">
+                    <div class="telef-texto">
+                        <h4>Teléfono</h4>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+
+                <div class="correo-elec">
+                    <img src="./img/correo-elec.svg" alt="">
+                    <div class="correo-elect-texto">
+                        <h4>Correo Electrónico</h4>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="logo2">
+                <img src="img/Cat.svg"alt="Logo1">
+                <h1>Front<span>Cat&Dog</span></h1>
+                <img src="img/Dog.svg"alt="Logo2">
+            </div>
+        </div>
+    
+        <div class="derechos">
+            <p>Todos los derechos reservados Front End</p>
+        </div>
+    
     </footer>
 </body>
 </html>

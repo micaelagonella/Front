@@ -1,13 +1,181 @@
-/* Header */ 
-header{
-    background-color: #F0A83E;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/***** Body *****/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0rem;
 }
-.arriba{
+.menu-nav-logo ul li , .ofertas ul li, .logo img, h1, img, .banner-texto, .productos-destacados ul li, .localidad div, .telef div, .correo-elec div{
+    display: inline-block;
+}
+/********* Header *********/ 
+.ofertas{
     background-color: #222222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 0.8rem;
 }
-
-/*Main*/
+.menu-nav-logo{
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 25px;
+}
+a, .logo span, .patita, button{
+    color: white;
+    text-decoration: none;
+}
+/*********** Main ***********/
 .banner{
     background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 40rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.placer{
+    background-color: white;
+    font-size: 2rem;
+    padding: 15px;
+}
+.comederos{
+    background-color: #F0A83E;
+    font-size: 2rem;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+.banner-texto{
+    text-align: center;
+}
+.productos-destacados h2{
+    font-size: 3rem;
+}
+.productos-destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.productos-destacados img{
+    height: 7rem;
+}
+.productos{
+    display: flex;
+    justify-content: space-around;
+    padding: 45px;
+}
+.productos #precio{
+    color: #F0A83E;
+}
+.productos div{
+    background-color: #FBFAF6;
+    font-weight: bold;
+    text-align: center;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input{
+    background-color: #3C2313;
+    border-radius: 20px;
+    border-style: none;
+    padding: 15px 250px 15px 15px;
+    margin: 7px;
+}
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+button[type="reset"]{
+    background-color: #8A8787;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px 30px 10px 30px;
+}
+button[type="submit"]{
+    background-color: #F0A83E;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px 30px 10px 30px;
+}
+form div{
+    margin: 50px;
+}
+
+/**************** Footer ****************/
+footer{
+    background-color: #3C2313;
+    color: white;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.suscribirme{
+    display: block;
+}
+.suscribirme input{
+    background-color: #FBFAF6;
+}
+.suscribirme button{
+    background-color: #3C2313;
+}
+.novedades p, .footer-text h4{
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: unset;
+}
+.novedades{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-text p{
+    color: #8A8787;
+    margin: unset;
+    padding: 5px 10px;
+}
+.logo2 span{
+    color: #F0A83E;
+}
+.derechos{
+    background-color: #222222;
+}
+.localidad, .telef, .correo-elec {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.derechos{
+    text-align: center;
+}
