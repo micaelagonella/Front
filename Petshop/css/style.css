@@ -8,6 +8,9 @@ body{
     display: inline-block;
 }
 /********* Header *********/ 
+.icono-menu{
+    display: none;
+}
 .ofertas{
     background-color: #222222;
     color: white;
@@ -169,7 +172,7 @@ footer{
 .derechos{
     background-color: #222222;
 }
-.localidad, .telef, .correo-elec {
+.localidad, .telef, .correo-elec{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -178,4 +181,71 @@ footer{
 
 .derechos{
     text-align: center;
+}
+
+@media all and (max-width: 480px){
+
+    /****** Header ******/
+.ofertas, .menu-nav{
+    display: none;
+}
+.icono-menu{
+    display: block;
+    color: white;
+}
+.banner{
+    width: 100vw;
+}
+
+/********** Main ********/
+
+.productos-destacados, .productos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.productos-destacados h2{
+    text-align: center;
+}
+.productos div{
+    margin: 15px;
+}
+form{
+    margin: 15px
+}
+input{
+    padding: 15px 150px 15px 15px;
+    margin: 7px;
+}
+/***** Footer ******/
+.novedades{
+    flex-direction: column;
+}
+.novedades input{
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+.suscribirme button{
+    padding: 10px 10px;
+}
+.novedades p{
+    font-size: 1.3rem;
+}
+.localidad, .telef, .correo-elec{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.footer-text{
+    flex-direction: column-reverse;
+}
+.localidad, .telef, .correo-elec{
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.logo2{
+    display: flex;
+    flex-direction: row;
+}
+.logo2 h4{
+    font-size: 0.8rem;
 }
