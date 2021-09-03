@@ -1,0 +1,23 @@
+.banner{
+    background-color: $colorPrincipal;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        img{
+            border-radius: 50%;
+            width: 15rem;
+            padding: 1rem;
+        }
+                &-texto{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem;
+                    h2, .star, p{
+                        padding: 1rem;
+                    }
+                }
+}

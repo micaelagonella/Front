@@ -1,12 +1,12 @@
 body{
     font-size: 20px;
-    line-height: 25px;
     margin: 0;
 }
 h1, h2{
         font-family: 'Times New Roman', Times, serif;
         color: #005677;
         background-color: #C4C4C4;
+        text-transform: uppercase;
         padding: 10px 20px; /*le da ancho al borde de la caja. Si pongo dos valores 1)arriba y abajo 2(der e izq)*/
 }
 
@@ -14,7 +14,7 @@ h1, h2{
 header{
     background-color: #E6E6E6;
     text-align: center;  /* Le va a pegar a la imagen y al h1*/
-    letter-spacing: 10px;
+    letter-spacing: 10px; /* le da espacio entre letras */
 }
 
 /*Main*/ 
@@ -28,7 +28,7 @@ span{
     font-style: italic;
 }
 ul, dl, dd {
-    margin-inline-start: 98px;
+    margin-inline-start: 98px; 
 }
 
 /*footer*/
@@ -39,7 +39,28 @@ footer{
 }
 footer h3{
     display: inline-block; /* le bloque el bloque al titulo iconos al lado*/
+    text-transform: uppercase;
 }
 .icono{
     margin-left: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .container-main{ 
+        margin: 0;
+    }
+    header{
+    letter-spacing: 0;
+    }
+    dl{
+        margin: 0px;
+        padding: 10px;
+    }
+    ul{
+        margin: 0px;
+        padding: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
 }

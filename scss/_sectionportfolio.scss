@@ -1,0 +1,42 @@
+.portfolio{
+    margin-bottom: 2.5rem;
+    &-texto{
+        color: $colorTerciario;
+        padding: 2rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .star{
+            padding: 1rem;
+        }
+    }
+    &-contenido a{
+                text-decoration: none;
+                color: $colorTerciario;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 2rem;
+                img{
+                    width: 100vw;
+                }
+            }
+    @media screen and ($mediaTablet) {
+    display: flex;  
+    flex-direction: column; 
+    &-contenido{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .container{
+            width: 30%;
+        }
+        a img{
+            width: 15rem;
+        }
+    } 
+}
+}
+
+

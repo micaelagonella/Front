@@ -1,0 +1,21 @@
+.sobremi{
+    background-color: $colorPrincipal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    &-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .star{
+        padding: 10px;
+        }
+    }
+}
+
+
+
+

@@ -13,6 +13,8 @@
     padding: 0 0 0 1rem;
     font-size: 1rem;
 }
+
+/******* Header *******/
 header{
     font-size: 2rem;
     font-weight: bold;
@@ -22,8 +24,6 @@ header{
     box-shadow: 0 0 30px rgba(0,0,0,0.6);
     background-color: #00669F;
 }
-
-/******* Header *******/
 header ul li a{
     text-decoration: none;
     color: white;
@@ -33,10 +33,10 @@ header ul li a{
 header ul li{
     display: inline-block;
 }
-.menu-nav{
+nav{
     background-color:#001D2D;
     text-align: right;
-
+    padding-bottom: 9px;
 }
 
 /******main******/
@@ -47,8 +47,6 @@ header ul li{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    align-content: space-between;
-    flex-grow: 0;
 }
 
 .card{
@@ -60,7 +58,7 @@ header ul li{
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.card-img{
+.card-img-batman{
     background-image: url('../img/fondobatman.svg');
     height: 11.8rem;
     background-size: cover;
@@ -86,7 +84,7 @@ header ul li{
     position: relative;
     border-radius: 1rem 1rem 0rem 0rem;
 }
-.card-img #fotito, .card-img-harley #fotito, .card-img-ww #fotito, .card-img-superman #fotito {
+.card-img-batman #fotito, .card-img-harley #fotito, .card-img-ww #fotito, .card-img-superman #fotito {
     position: absolute;
     border-radius: 50%;
     bottom: -60px;
@@ -103,6 +101,8 @@ header ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
+    /* line-height: para poner interlineado */
 }
 .card-text p{
     padding: 1rem;
@@ -128,8 +128,8 @@ footer{
     color: white;
 }
 
-/********** Responsive ************/
-@media screen and (max-width: 768px){
+/********** Responsive ************/  
+@media screen and (max-width: 768px){  /* tablet */
     .container{
         flex-wrap: wrap;
         align-content: space-around;
@@ -149,7 +149,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px){ /* celular 
     .container{
         flex-direction: column;
         margin-top: 1rem;
