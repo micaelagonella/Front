@@ -2,21 +2,9 @@
 
 *{ 
     margin: 0px;
-}
-
-body{
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-ul li{
-    list-style-type: none;
-    color: white;
-    padding: 5px;
-}  
-
-nav ul li, img, h1, .columna1, .imagen, .nav, .logo2{
-    display: inline-block;
 }
 
 
@@ -24,13 +12,23 @@ nav ul li, img, h1, .columna1, .imagen, .nav, .logo2{
 header{
     background-color:#222222;
 }
-
+.hamburguesa{
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
 .hcontainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
+.hcontainer li{
+    list-style-type: none;
+    color: white;
+    padding: 5px;
+    display: inline-block;
+} 
 
 /********** MAIN ***********/
 main{
@@ -38,11 +36,11 @@ main{
 }
 h2{
     color: red;
+    padding: 15px;
 }
 span{
     color: white;
 }
-
 .mcontainer{
     display: flex;
     justify-content: space-around;
@@ -54,20 +52,19 @@ span{
     Width: 490px;
     Height: 350px;
 }
-.delivery h2{
-    padding: 15px;
-}
-
-.podio{
+.pizzas{
     background-color: #FFFFFF;
     Width: 490px;
     Height: 350px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
-
+.pizzas-podio{
+    display: flex;
+}
 /**********Footer*************/
 footer{
     background-color:#222222;
@@ -76,14 +73,29 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
+.nav{
+    color: white;
+}
 
 /********* responsive ********/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){ /*tablet */
     header nav{
         display: none;
     }
-    header .hamburguesa{
+    .hcontainer .hamburguesa{
         display: block;
+        margin-right: 20px;
+    }
+    header nav{
+        display: none;
+    }
+    .mcontainer{
+        flex-direction: column;
+        align-items: center;
     }
 }
-/* PARA TABLET */
+@media screen and (max-width: 480px){
+    .delivery, .pizzas{
+        width: 100vw;
+    }
+}

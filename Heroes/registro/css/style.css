@@ -110,4 +110,8 @@ footer{
     .heroes{
         color: white;
     }
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
 }

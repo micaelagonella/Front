@@ -16,8 +16,11 @@
                     justify-content: center;
                     align-items: center;
                     padding: 2rem;
-                    h2, .star, p{
+                    h1, .star, p{
                         padding: 1rem;
+                    }
+                    h1{
+                        text-transform: uppercase;
                     }
                 }
 }

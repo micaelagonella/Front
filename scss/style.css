@@ -8,58 +8,14 @@
 }
 
 header {
-  background-color: #3f688a;
+  background-color: #6987a0;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  padding: 0.5rem;
 }
 
-header h2 {
-  font-family: 'Kanit', sans-serif;
+p {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 1.2rem;
-}
-
-header .burguer {
-  padding: 5px;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 460px) {
-  header .burguer {
-    display: none;
-  }
-}
-
-header nav {
-  display: none;
-}
-
-@media screen and (min-width: 460px) {
-  header nav {
-    display: block;
-  }
-  header nav ul {
-    margin-bottom: 0;
-  }
-  header nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 5px;
-  }
-  header nav ul li a {
-    text-decoration: none;
-    color: white;
-  }
 }
 
 .banner {
@@ -103,8 +59,12 @@ header nav {
   padding: 2rem;
 }
 
-.banner-texto h2, .banner-texto .star, .banner-texto p {
+.banner-texto h1, .banner-texto .star, .banner-texto p {
   padding: 1rem;
+}
+
+.banner-texto h1 {
+  text-transform: uppercase;
 }
 
 .portfolio {
@@ -131,7 +91,11 @@ header nav {
   padding: 1rem;
 }
 
-.portfolio-contenido a {
+.portfolio-contenido .lemonpie, .portfolio-contenido .cvbatman, .portfolio-contenido .heroes, .portfolio-contenido .petshop, .portfolio-contenido .pizza, .portfolio-contenido .js {
+  position: relative;
+}
+
+.portfolio-contenido .lemonpie a, .portfolio-contenido .cvbatman a, .portfolio-contenido .heroes a, .portfolio-contenido .petshop a, .portfolio-contenido .pizza a, .portfolio-contenido .js a {
   text-decoration: none;
   color: #0e0e35;
   display: -webkit-box;
@@ -147,35 +111,93 @@ header nav {
   padding-bottom: 2rem;
 }
 
-.portfolio-contenido a img {
+.portfolio-contenido .lemonpie a img, .portfolio-contenido .cvbatman a img, .portfolio-contenido .heroes a img, .portfolio-contenido .petshop a img, .portfolio-contenido .pizza a img, .portfolio-contenido .js a img {
   width: 100vw;
 }
 
-@media screen and (min-width: 460px) {
-  .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+@media all and (min-width: 481px) {
   .portfolio-contenido {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .portfolio-contenido .container {
-    width: 30%;
+  .portfolio .lemonpie, .portfolio .cvbatman, .portfolio .heroes, .portfolio .petshop, .portfolio .pizza, .portfolio .js {
+    grid-column: 1 span;
+    grid-row: 1 span;
   }
-  .portfolio-contenido a img {
-    width: 15rem;
+  .portfolio .lemonpie a img, .portfolio .cvbatman a img, .portfolio .heroes a img, .portfolio .petshop a img, .portfolio .pizza a img, .portfolio .js a img {
+    width: 50vw;
+  }
+}
+
+@media all and (min-width: 481px) {
+  .portfolio-contenido {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio .lemonpie, .portfolio .cvbatman, .portfolio .heroes, .portfolio .petshop, .portfolio .pizza, .portfolio .js {
+    grid-column: 1 span;
+    grid-row: 1 span;
+  }
+  .portfolio .lemonpie a img, .portfolio .cvbatman a img, .portfolio .heroes a img, .portfolio .petshop a img, .portfolio .pizza a img, .portfolio .js a img {
+    width: 50vw;
+  }
+}
+
+@media all and (min-width: 769px) {
+  .portfolio-contenido {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio .lemonpie, .portfolio .cvbatman, .portfolio .heroes, .portfolio .petshop, .portfolio .pizza, .portfolio .js {
+    grid-column: 1 span;
+    grid-row: 1 span;
+  }
+  .portfolio .lemonpie a img, .portfolio .cvbatman a img, .portfolio .heroes a img, .portfolio .petshop a img, .portfolio .pizza a img, .portfolio .js a img {
+    width: 20vw;
+  }
+  .portfolio .lemonpie span, .portfolio .cvbatman span, .portfolio .heroes span, .portfolio .petshop span, .portfolio .pizza span, .portfolio .js span {
+    position: absolute;
+    width: 13rem;
+    height: 8rem;
+    color: black;
+    background-color: rgba(94, 90, 90, 0.75);
+    left: 26%;
+    top: 31px;
+    opacity: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio .lemonpie:hover span, .portfolio .cvbatman:hover span, .portfolio .heroes:hover span, .portfolio .petshop:hover span, .portfolio .pizza:hover span, .portfolio .js:hover span {
+    opacity: 1;
   }
 }
 
@@ -215,5 +237,70 @@ header nav {
 
 .sobremi-texto .star {
   padding: 10px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 1rem;
+}
+
+form .form-texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-contenido {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  margin-top: 2rem;
+}
+
+form .form-contenido textarea, form .form-contenido input {
+  resize: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+form .form-contenido input[type="submit"] {
+  background-color: #6babc9;
+  border: none;
+}
+
+.footer-top {
+  background-color: #6babc9;
+}
+
+.footer-bot {
+  background-color: #6987a0;
 }
 /*# sourceMappingURL=style.css.map */

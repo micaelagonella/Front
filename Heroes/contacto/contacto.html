@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
 </head>
-
 <body>
     <div class="descuento"><p>Descuentos 20%</p></div>
 
@@ -15,10 +14,11 @@
         <h1 class="heroes">Heroes</h1>
     </header>
 
+
     <main>
-        <div class="contacto">
+        <div class= "contacto">
             <h3>Contacto</h3>
-            <form action="contacto.html" method="POST">
+            <form action="contacto.json" method="POST">
                 <label for="nombre">Nombre y Apellido</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" minlength="5" maxlength="30">
             
@@ -26,13 +26,15 @@
                 <input type="email" id="email" name="email" placeholder="Jonathan@digitalhouse.com">
             
                 <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje"placeholder="Hola!, me gustaría recibir información sobre el muñeco de Batman, ya que como saben soy muy fanático de bruce wayne.
-
-                Gracias!"></textarea>
-
-                <div class="contacto-botones">
-                    <a href="../index/index.html">Entrar</a>
-                    <button type="reset" value="reset">Resetear</button>
+                <textarea name="mensaje" placeholder="Hola!, me gustaría recibir información sobre el muñeco de Batman, ya que como saben soy muy fanático de bruce wayne. Gracias!"></textarea>
+            
+                <div class="info">
+                    <div class="contacto-botones">
+                        <a href="../index/index.html">Ingresar</a>
+                        <button type="reset" value="reset">Resetear</button>
+                    </div>
+            
+                    <p>Ya tenes una cuenta? <a href="../index/index.html">Ingresá</a></p>
                 </div>
 
             </form>
@@ -43,6 +45,5 @@
         <p>Todos los derechos reservados a Micaela Gonella</p>
         <a href="https://micaelagonella.github.io/FrontEnd1/"><i class="fab fa-github git git"></i></a>
     </footer>
-
 </body>
 </html>

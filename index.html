@@ -14,22 +14,30 @@
 <body>
 
     <header>
-        <h2>MICAELA GONELLA</h2>
-        <i class="fas fa-bars burguer"></i>
-        <nav>
-            <ul>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#sobremi">SOBRE MÍ</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <p>Micaela Gonella</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main>
         <div class="banner">
             <img src="img/yo.jpeg" alt="mifoto">
             <div class="banner-texto">          
-                <h1>MICAELA GONELLA</h1>
+                <h1>MIcaela Gonella</h1>
                 <i class="far fa-star star"></i>
                 <p>Estudiante Certified Tech Developer</p>
             </div>
@@ -41,23 +49,29 @@
             <i class="far fa-star star"></i>
         </div>
         <div class="portfolio-contenido">
-            <div class="container">
+            <div class="lemonpie">
                 <a href="LemonPie/index.html"><img src="img/lemon-pie.jpeg" alt="LemonPie">Lemon Pie</a>
+                <span>Maquetado HTML</span>
             </div>
-            <div class="container">
-                <a href="CVBatman/index.html"><img src="img/CVBatman.png" alt="CVBatman">Cv Batman</a>
+            <div class="cvbatman">
+                <a href="CVBatman/index.html"><img src="img/CVBatman.png" alt="CVBatman">CV Batman</a>
+                <span>CSS básico</span>
             </div>
-            <div class="container">
+            <div class="heroes">
                 <a href="Heroes/index/index.html"><img src="img/super.png" alt="heroes">Héroes</a>
+                <span>Formularios</span>
             </div>
-            <div class="container">
+            <div class="petshop">
                 <a href="Petshop/index.html"><img src="img/petshop.jpeg" alt="petshop">Petshop</a>
+                <span>Responsive</span>
             </div>
-            <div class="container">
+            <div class="pizza">
                 <a href="Pizza/index.html"><img src="img/piza.jpeg" alt="pizzeria">Pizzeria</a>
+                <span>Flex</span>
             </div>
-            <div class="container">
-                <a href="Gameshop"><img src="img/gameshop.jpeg" alt="gameshop">Game Shop</a>
+            <div class="js">
+                <a href="FALTA COMPLETAR EL REPO Y DIRECCION"><img src="img/js.png" alt="javascript">Javascript</a>
+                <span>App de búsqueda de objetos con métodos de arrays avanzados</span>
             </div>
         </div>
     </section>
@@ -68,7 +82,7 @@
             <i class="far fa-star star"></i>
         </div>
         <div class="sobremi-descripcion">
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, perspiciatis aut! Numquam modi non saepe quam error animi, aspernatur beatae quae ullam, aut provident tempore vitae nisi debitis expedita ipsam?</P>
+            <P>Soy Mica, me encuentro estudiando full stack developer en la carrera Certified Tech Developer de Digital House. También me encuentro terminando mi Licenciatura en Ciencias Biológicos y si hay algo que ambas carreras me demostraron es que amo los desafios e investigar al respecto.</P>
         </div>
         <div class="sobremi-cv">
 
@@ -76,14 +90,47 @@
     </section>
 
     <form action="contactame.json" method="POST">
-        <div class="">
+        <div class="form-texto">
             <h3>CONTACTAME</h3>
             <i class="far fa-star star"></i>
+        </div>
+        <div class="form-contenido">
+            <label for="name" id= "name">Nombre y Apellido</label>
+            <input type="text" name="name" id="name">
+            
+            <label for="email" id="email">Email</label>
+            <input type="email"name="email" id="email">
+            
+            <label for="tel">Número de Teléfono</label>
+            <input type="tel" name="tel" id="tel">
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" cols="10" rows="5" id="mensaje"></textarea>
+            
+            <input type="submit">
         </div>
     </form>
 
     </main>
-    <footer></footer>
+
+    <footer>
+        <div class="footer-top">
+            <div class="lugar">
+                <h5>Mi lugar</h5>
+                <span>Bahia Blanca, Argentina</span>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/micagonella/?hl=es"><i class="fab fa-instagram redes"></i></a>
+                <a href="https://www.linkedin.com/in/f%C3%A1tima-micaela-gonella-6a22171a7/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/micaelagonella"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+            <div class="footer-bot">
+                <p>Todos los derechos reservados a Micaela Gonella</p>
+            </div>
+    </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>

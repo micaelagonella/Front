@@ -42,20 +42,20 @@ label{
     display: block;
 }
 
-form input, textarea{
+form input{
     margin: 10px 0;
     width: 50vw;
     padding: 10px;
     resize: none;
 }
 textarea{
-    height: 15vh;
+    width: 50vw;
+    height: 20vh;
 }
 .contacto h3{
     font-size: 3rem;
     font-weight: 700;
     padding: 2rem 0;
-
 }
 a{
     color: black;
@@ -78,6 +78,16 @@ a{
     background-color: grey;
     color: white;
 }
+.info p a {
+    color:#00669F;
+    text-align: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*********** Footer **********/
 footer{
     background-color: #00669F;
@@ -85,7 +95,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+
     bottom: 0;
     width: 100vw;
     padding: 1rem;
@@ -103,5 +113,9 @@ footer{
     }
     .heroes{
         color: white;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
     }
 }
