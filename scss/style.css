@@ -256,6 +256,7 @@ form {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 1rem;
+  padding: 1rem 0rem;
 }
 
 form .form-texto {
@@ -296,11 +297,46 @@ form .form-contenido input[type="submit"] {
   border: none;
 }
 
-.footer-top {
-  background-color: #6babc9;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline;
 }
 
-.footer-bot {
+footer .footer-top {
+  background-color: #6babc9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+footer .footer-top .redes {
+  color: white;
+  padding: 5px 2rem;
+}
+
+footer .footer-bot {
   background-color: #6987a0;
+  text-align: center;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

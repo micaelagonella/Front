@@ -1,7 +1,25 @@
-.footer-top{
-    background-color: $colorPrincipal;
-}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline;
 
-.footer-bot{
-    background-color: $colorSecundario;
+        .footer-top{
+            background-color: $colorPrincipal; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            padding: 10px;
+            .redes{
+                color: white;
+                padding: 5px 2rem;
+            }      
+        }
+
+        .footer-bot{
+            background-color: $colorSecundario;
+            text-align: center;
+            padding: 10px;
+        }
 }
