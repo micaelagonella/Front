@@ -1,38 +1,38 @@
-// Creamos un nuevo usuario
+/* Creacion de un nuevo usuario */
+
+const todoApiUrl = "https://ctd-todo-api.herokuapp.com/users/login";
 
 const nuevoUsuario = {
-    firstName: "nombreUstedes",
-    lastName: "ApellidoUstedes",
-    email: "correoUstedes",
-    password: "contUstedes"
+    firstName: "Micaela",
+    lastName: "Gonella",
+    email: "gonellamicaela@gmail.com",
+    password: "2019812"
 };
-const payloadTodo =  JSON.stringify(nuevoUsuario);
+const payloadToDo =  JSON.stringify(nuevoUsuario);
 
-const settingsTodo = {
+const settingsToDo = {
     method: 'POST',
     headers: {
         'Content-type': 'application/json; charset=UTF-8',
     },
-    body: payloadTodo
+    body: payloadToDo
 }
 
-fetch(`${todoApiUrl}/users`, settingsTodo)
+fetch(`${todoApiUrl}/users`, settingsToDo)
 .then(response => response.json())
 .then(respuesta => {
     console.log(respuesta);
 })
 
+/*Logica de la app*/
 
-
-
-
+window.addEventListener("load", function(){
 
 const formulario = document.querySelector("form");
-const apiURL = "https://ctd-todo-api.herokuapp.com/users/login"
+const inputEmail = document.querySelector("#inputEmail");
+const inputPassword = document.querySelector("#inputPassword")
 
-window.addEventListener("load", function()){
-
-formulario.addEventListener ("submit", function(e)){
+formulario.addEventListener ("submit", function(e){
     e.prevenDefault();
 
     const resultadoValidacion = validarNoVacio(inputEmail.value) && validarNoVacio(inputPassword.value);
@@ -41,13 +41,12 @@ formulario.addEventListener ("submit", function(e)){
         // desplegamos la logica de una validacion correcta
         const datosUsuario = normalizacionLogin(inputEmail.value , inputPassword.value);
         console.log(datosUsuario)
-        fetchApiLogeo (apiURL, datosUsuario);
+        fetchApiLogeo (todoApiUrl, datosUsuario);
     }else{
         console.log("No completó correctamente los datos");
     }
-
     formulario.reset();
-}
+};
 
 /*------funciones-----*/
 
@@ -73,7 +72,7 @@ function fetchApiLogeo (url, payload /*datos en JSON (info q va a la API))*/){
     const settings = {
         method : "POST",
         header : {
-            'Content-Type: application/json'
+            'Content-Type': 'application/json'
         },
         body : JSON.stringify(payload)
     }
@@ -90,6 +89,8 @@ function fetchApiLogeo (url, payload /*datos en JSON (info q va a la API))*/){
         }else{
             alert("Alguno de los datos ingresados es incorrecto");
         }
-        }
-    });
-}
+        })
+    };
+});
+
+
