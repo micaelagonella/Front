@@ -166,6 +166,9 @@ footer{
     margin: unset;
     padding: 5px 10px;
 }
+.logo2{
+    display: flex;
+}
 .logo2 span{
     color: #F0A83E;
 }
